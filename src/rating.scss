@@ -1,0 +1,28 @@
+.Rating {
+  text-align: center;
+  position: relative;
+  width: 100%;
+  height: 100%;
+
+  h2 {
+    padding: 0;
+    margin-bottom: 0;
+    font-size: 2.4em;
+  }
+
+  h3 {
+  }
+
+  p {
+    padding: 10px 0;
+    margin-bottom: 20px;
+    font-size: 1.2em;
+  }
+
+  .button-container {
+    display: inline-block;
+    height: 100px;
+    width: 100%;
+    z-index: -10;
+  }
+}

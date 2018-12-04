@@ -1,0 +1,42 @@
+.modal-container {
+  position: relative;
+  top: 120px;
+  height: auto;
+  width: 40vw;
+  margin: 0 auto;
+  text-align: center;
+  border: 1px solid rgba(224,224,224,0.4);
+  padding: 30px;
+  border-radius: 6px;
+  z-index: -1;
+  -webkit-box-shadow: 0px 0px 36px 0px rgba(214,211,214,0.71);
+  -moz-box-shadow: 0px 0px 36px 0px rgba(214,211,214,0.71);
+  box-shadow: 0px 0px 36px 0px rgba(214,211,214,0.71);
+
+  .header {
+
+    h2 {
+      margin: 0;
+    }
+  }
+
+  p {
+    width: 80%;
+    margin: 10px auto;
+    padding: 10px 0;
+  }
+
+  .ratings-container {
+    padding: 10px 0;
+
+    .stars {
+      padding: 8px 0;
+      margin: 15px 0;
+    }
+
+    p {
+      font-weight: bold;
+      font-size: 1.3em;
+    }
+  }
+}

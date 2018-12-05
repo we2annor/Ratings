@@ -1,10 +1,7 @@
 import React from 'react';
-import classNames from 'classnames'
-import './style.scss';
+import './Star.scss';
 
 export const Star= (props) => {
-
-  const classes = classNames('star');
 
   const defaultStyle = {
     color: '#FFF',
@@ -19,19 +16,15 @@ export const Star= (props) => {
   const style = (props.active) ? activeStyle : defaultStyle;
 
     return(
-      <svg className="star" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 55.867 55.867" width={props.width} height={props.height}>
-      <path d="M11.287 54.548a.997.997 0 0 1-.985-1.169l3.091-18.018L.302 22.602a1.001 1.001 0 0 1 .555-1.705l18.09-2.629 8.091-16.393a.996.996 0 1 1 1.792 0l8.09 16.393 18.091 2.629a1.002 1.002 0 0 1 .555 1.705L42.475 35.363l3.09 18.017c.064.375-.09.754-.397.978a.993.993 0 0 1-1.054.076l-16.18-8.506-16.182 8.506a1.008 1.008 0 0 1-.465.114zM3.149 22.584l12.016 11.713a1 1 0 0 1 .287.885L12.615 51.72l14.854-7.808a.996.996 0 0 1 .931 0l14.852 7.808-2.836-16.538a1 1 0 0 1 .287-.885l12.016-11.713-16.605-2.413a1 1 0 0 1-.753-.547L27.934 4.578l-7.427 15.047a1 1 0 0 1-.753.547L3.149 22.584z"
-      fill={style.outlineColor}
-      stroke={style.outlineColor}
-      data-id ={props.id}/>
+      <svg className="star" width={props.width} height={props.height} viewBox="0 0 18 18"
+        onClick={() => { props.selectRating(props.questionIndex, props.starIndex + 1) }}>
+          <g stroke="none" strokeWidth="1" fill="none" fillRule="evenodd">
+              <g transform="translate(-792.000000, -174.000000)" fill={style.color} stroke={style.outlineColor}>
+                  <g transform="translate(719.000000, 174.000000)">
+                      <polygon points="83.499 8.296 84.325 13 79.999 10.78 75.672 13 76.498 8.296 72.998 4.966 77.836 4.279 79.999 0 82.162 4.279 87 4.966"></polygon>
+                  </g>
+              </g>
+          </g>
       </svg>
     );
-};
-
-export const StarColored = (props) =>{
-  return(
-    <svg viewBox="0 0 55.867 55.867" width={props.width} height={props.height}>
-    <path d="M11.287 54.548a.997.997 0 0 1-.985-1.169l3.091-18.018L.302 22.602a1.001 1.001 0 0 1 .555-1.705l18.09-2.629 8.091-16.393a.996.996 0 1 1 1.792 0l8.09 16.393 18.091 2.629a1.002 1.002 0 0 1 .555 1.705L42.475 35.363l3.09 18.017c.064.375-.09.754-.397.978a.993.993 0 0 1-1.054.076l-16.18-8.506-16.182 8.506a1.008 1.008 0 0 1-.465.114zM3.149 22.584l12.016 11.713a1 1 0 0 1 .287.885L12.615 51.72l14.854-7.808a.996.996 0 0 1 .931 0l14.852 7.808-2.836-16.538a1 1 0 0 1 .287-.885l12.016-11.713-16.605-2.413a1 1 0 0 1-.753-.547L27.934 4.578l-7.427 15.047a1 1 0 0 1-.753.547L3.149 22.584z" fill={props.color}/>
-    </svg>
-  )
 };

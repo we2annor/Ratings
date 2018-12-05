@@ -10,9 +10,6 @@
     font-size: 2.4em;
   }
 
-  h3 {
-  }
-
   p {
     padding: 10px 0;
     margin-bottom: 20px;
@@ -20,9 +17,41 @@
   }
 
   .button-container {
-    display: inline-block;
-    height: 100px;
+    position: fixed;
+    bottom: 40px;
     width: 100%;
-    z-index: -10;
+  }
+
+  .hide {
+    visibility: hidden;
+    display: none;
+  }
+
+  .show {
+    visibility: visible;
+    display: block;
+  }
+
+  @media(max-width: 400px){
+
+    h2 {
+      font-size: 2em;
+      padding: 10px 0;
+    }
+
+    p {
+      text-align: center;
+      font-size: 1em;
+    }
+  }
+
+  @media (min-width: 401px){
+    h2 {
+      font-size: 2.2em;
+    }
+  }
+
+  @media(max-width: 1099px){
+
   }
 }

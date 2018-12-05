@@ -10,7 +10,26 @@
 
   h1 {
     font-size: 2.6em;
-    padding: 10px 0 10px 0;
+    padding: 10px 0;
     margin: 0;
+
+    @media(max-width: 400px){
+      margin: 0;
+      padding: 10px 0;
+      font-size: 1.8em;
+      background-color: #181818;
+      color: #FFF;
+      z-index: 100;
+    }
+
+    @media(max-width: 768px){
+      padding: 10px 0;
+      font-size: 2.1em;
+    }
+  }
+
+  @media(max-width: 768px){
+    background-color: #181818;
+    color: #FFF;
   }
 }

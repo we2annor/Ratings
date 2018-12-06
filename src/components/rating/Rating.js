@@ -1,6 +1,7 @@
 import React from 'react';
 import { Star } from '../star/Star'
 
+//Rating component which generates the stars
 const Rating = (props) => {
 
     const stars=[];

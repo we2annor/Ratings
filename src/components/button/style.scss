@@ -8,6 +8,9 @@
   margin: 0 auto;
   letter-spacing: 0.1px;
   word-spacing: 1px;
+  -webkit-box-shadow: 11px 33px 44px -8px rgba(214,211,214,0.71);
+  -moz-box-shadow: 11px 33px 44px -8px rgba(214,211,214,0.71);
+  box-shadow: 11px 33px 44px -8px rgba(214,211,214,0.71);
 
   &.primary {
     background-color: rgba(1, 169, 253, 0.9);
@@ -18,7 +21,7 @@
     background-color: rgba(181, 59, 76, 0.9);
   }
 
-  @media(max-width: 400px){
+  @media(max-width: 600px){
     font-size: 1em;
     padding: 10px 20px;
   }

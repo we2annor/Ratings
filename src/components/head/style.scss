@@ -1,5 +1,6 @@
 .app-header {
-  max-height: 8vh;
+  height: 10vh;
+  max-height: 100px;
   z-index: 200;
   max-width: 100vw;
   width: 100%;
@@ -12,26 +13,23 @@
 
   h1 {
     font-size: 2.6em;
-    padding: 10px 0;
-    margin: 0;
+    padding: 10px 0 5px 0;
+    margin: 10px 0 0 0;
 
-    @media(max-width: 400px){
+    @media(max-width: 600px){
       margin: 0;
-      padding: 10px 0;
+      padding: 5px 0;
       font-size: 1.8em;
-      background-color: #181818;
-      color: #FFF;
-      z-index: 100;
+
+      h1 {
+        font-size: 2em;
+        margin-bottom: 4px;
+      }
     }
 
     @media(max-width: 768px){
       padding: 10px 0;
       font-size: 2.1em;
     }
-  }
-
-  @media(max-width: 768px){
-    background-color: #181818;
-    color: #FFF;
   }
 }

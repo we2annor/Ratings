@@ -22,17 +22,18 @@
     width: 100%;
   }
 
-  .hide {
-    visibility: hidden;
-    display: none;
+  .submitted {
+    padding: 10px;
+    position: relative;
+    top: 150px;
+
+    p {
+      padding: 20px;
+      text-align: left;
+    }
   }
 
-  .show {
-    visibility: visible;
-    display: block;
-  }
-
-  @media(max-width: 400px){
+  @media(max-width: 600px){
 
     h2 {
       font-size: 2em;
@@ -45,7 +46,7 @@
     }
   }
 
-  @media (min-width: 401px){
+  @media (min-width: 601px){
     h2 {
       font-size: 2.2em;
     }

@@ -4,6 +4,7 @@ import Button from '../../components/button/Button';
 import CloseButton from '../../components/closeButton/CloseButton';
 import './style/Modal.scss';
 
+//Modal component
 class Modal extends Component {
   constructor(props){
     super(props);
@@ -23,13 +24,14 @@ class Modal extends Component {
           rating: 0
         }
       ]
-    }
-  }
+    };
+  };
 
   submit = () => {
     this.props.submit(this.state.questions)
   }
 
+  //Selecting star ratings based on the question index
   selectRating = (questionIndex, rating) => {
     const questions = this.state.questions;
     questions[questionIndex].rating = rating;
@@ -54,7 +56,7 @@ class Modal extends Component {
         <div className="ratings-container">
 
         {this.state.questions.map((question, index)=>(
-          <React.Fragment>
+          <React.Fragment   key={index}>
             <p>{question.question}</p>
             <div className="stars">
 

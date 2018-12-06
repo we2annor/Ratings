@@ -10,7 +10,7 @@ class App extends Component {
     super(props)
 
     this.state = {
-      modalVisible : false,
+      modalVisible : false,//modal visibility set in the state
       submitted : false,
       submitJSON: ''
     }
@@ -38,10 +38,9 @@ class App extends Component {
   }
 
   render() {
-    const btn = classNames({
+    const btnClasses = classNames({
       "button-container": true,
       "primary": true,
-      "hide": this.state.modalVisible
     })
 
     return (
@@ -52,7 +51,7 @@ class App extends Component {
         )}
 
         {!this.state.modalVisible && (
-          <div className={btn} onClick={this.showModal}>
+          <div className={btnClasses} onClick={this.showModal}>
             <Button name="Please Rate Us"/>
           </div>
         )}
